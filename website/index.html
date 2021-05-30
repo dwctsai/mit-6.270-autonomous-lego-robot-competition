@@ -1,0 +1,254 @@
+<html>
+
+<head>
+<style type="text/css">
+A:hover {COLOR: navy; FONT-FAMILY: verdana,arial,sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: underline}
+A:link {COLOR: navy; FONT-FAMILY: verdana,arial,sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A:visited {COLOR: navy; FONT-FAMILY: verdana,arial,sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+
+A.left-nav:link		{font-family: verdana, helvetica; font-weight: bold; font-size: 12; color: #FFFFFF; text-decoration: none}
+A.left-nav:visited	{font-family: verdana, helvetica; font-weight: bold; font-size: 12; color: #FFFFFF; text-decoration: none}
+A.left-nav:hover	{font-family: verdana, helvetica; font-weight: bold; font-size: 12; color: #FFFFFF; text-decoration: underline}
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>6.270 2003: Team 9</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF">
+
+
+
+
+<table border="0" width="800">
+  <tr>
+    <td width="50" height="100" bgcolor="#008000" valign="center">
+		<font face="VERDANA,HELVETICA" size="2">
+		<H2>6.270</H2>
+		</font>
+    </td>
+    
+    <td height="100" bgcolor="#FF0000">
+    <img border="0" src="logo.jpg" width="750" height="100">    
+    </td>
+  </tr>
+  
+  <tr>
+    <td width="100" bgcolor="#0000FF" valign="top">
+		<font face="VERDANA,HELVETICA" size="2" color="#FFFFFF">
+			<br><br>
+			<a class="left-nav" href="index.html#contest">Contest</a><br>
+			<a class="left-nav" href="index.html#name">The Name</a><br>
+			<a class="left-nav" href="index.html#strategy">Strategy</a><br>
+			<a class="left-nav" href="index.html#robot">Design</a><br>
+			<a class="left-nav" href="index.html#results">Results</a><br>
+			<a class="left-nav" href="index.html#analysis">Analysis</a><br>
+			<a class="left-nav" href="index.html#pictures">Pictures</a><br>
+			<a class="left-nav" href="index.html#code">Code</a><br>                                                      
+			<a class="left-nav" href="index.html#team">The Team</a><br>            
+		</font>
+    </td>
+    
+    <td bgcolor="#FFFFFF">
+	    <font face="VERDANA,HELVETICA" size="2" color="#000000">
+		    <a name="contest">
+			<H2>The Contest</H2></a>
+            6.270 is a robotics contest held at MIT every January.&nbsp; The
+            goal of 6.270 is to teach students about robotic design by giving
+            them the hardware, software, and information they need to design,
+            build, and program their own robots.&nbsp; Each team is given a kit
+            valued at $1500 which includes LEGOs, a handyboard, and various
+            other electronic components.<br>
+            <br>
+            This year's (2003) competition, &quot;Montezuma's Revenge,&quot;
+            involves a three-tiered playing field.&nbsp;
+            Robots are placed at the designated starting positions and try to
+            collect balls of their own color.&nbsp; If they manage to bring one
+            of their balls to rest at the center plateau, they get 1
+            point.&nbsp; If they manage to place the ball inside the bucket on
+            the lower plateau, they are awarded 4 points.&nbsp; Each round lasts
+            for 60 seconds and at the end of the round, the team with the
+            highest score wins.
+            <p>&nbsp;</p>
+            <p align="center"><img border="0" src="playing_field_small.jpg" width="400" height="403">
+            </p>
+            <p align="center">The Playing Field</p>
+		    <br>
+		    <br>
+		    <a name="name">
+		    <H2>The Name</H2></a>
+            We had a hard time thinking of a name for our robot because it went
+            through so many different revisions.&nbsp; Since our robot's final
+            design looked kind of like a steam shovel, we thought of naming our
+            robot &quot;Constructicon&quot;, after the powerful 5-component
+            Decepticon in the anime &quot;Transformers.&quot;&nbsp; However, one
+            day in lab, somebody started playing &quot;<a href="http://mit.edu/dwtsai/www/kerpal.mp3">kerpal - kick
+            dog.mp3</a>&quot;, the infamous prank call that has been floating around
+            the Internet for years.&nbsp; Unable to think of a better name, we
+            decided to pay homage to the popular mp3 and named our robot &quot;kerpal&quot;.&nbsp;
+		    <a name="strategy">
+		    <H2>Strategy</H2></a>
+            Our robot went for an &quot;all-or-nothing&quot; type
+            strategy.&nbsp; We decided that since the bin at the bottom of the
+            playing field was the jackpot, we should go for it.&nbsp; If we
+            manage to score into the bucket, the best our opponent can do is tie
+            us with 4 points.&nbsp; We designed our robot to line follow up the
+            hill to collect a ball.&nbsp; If we get the enemy's ball dump it and
+            try again.&nbsp; When we get our own ball, our robot will then
+            line-follow down the hill, turn toward the center of the field, and
+            then proceed to dump our ball into the bin.
+		    <br>
+		    <br>     
+		    <a name="robot">
+		    <H2>Our Robot's Design</H2></a>
+            Our robot went through at least 6 different revisions before
+            settling at its final design.&nbsp; We wanted our robot to be able
+            to line follow, so we placed 5 sensors on the bottom (5
+            LED/phototransistor pairs).&nbsp; Our robot has two back wheels,
+            each driven by a motor.&nbsp; It also has a third, un-driven front
+            wheel that is connected to a servo to help with steering and
+            balance.&nbsp; The gear train running the back wheels has a 45:1
+            gear ratio, which we thought would give our robot a very quick
+            speed.<br>
+            <br>
+            Originally, we rested our handyboard and batteries on a roof on top
+            of the robot, but our bot turned out to be too top-heavy.&nbsp; We
+            fixed the problem by building a compartment on the left side of the
+            robot that could hold the handyboard snugly and a compartment on the
+            right side of the robot that could hold the batteries.<br>
+            <br>
+            The front of our robot was what gave us the most trouble.&nbsp;
+            Originally, we wanted a row of spinning tires hanging above a ramp
+            that would knock balls in.&nbsp; That didn't work very well, because
+            the motor that was attached to the overhanging arm holding the axle
+            of tires made the arm bounce vigorously.&nbsp; We had difficulty
+            finding a way to gear down the motor, and we also started running
+            into the problem of having our robot not fit into the size
+            constraints.&nbsp; After playing around with several configurations
+            of the tires, we decided to discard the idea and try a new
+            one.&nbsp; We
+            finally settled on a steam-shovel like design that incorporated a
+            long arm/ramp powered by a servo.&nbsp; The servo itself was
+            powerful enough to lift the ramp arm, but unfortunately it turned
+            out that one servo was not enough to also lift a ball.&nbsp; If the
+            ramp had another servo or motor helping it lift the arm, then it
+            might actually have been powerful enough to lift a ball.&nbsp;
+            Alternatively, we could have tried gearing down the servo to
+            sacrifice the servo's 180-degree swivel range to a 90-degree range
+            with twice the power.&nbsp; Unfortunately, we ran out of time and
+            could not implement a fix.<br>
+            <br>
+            Had our robot been able to lift a ball, we had a color sensor on the
+            ramp itself that would detect whether or not a collected ball was
+            one of ours or one of the enemy's.&nbsp; The entire back half of our
+            robot is a downward slope so that a ball can roll down the back and
+            into a bucket.&nbsp; We had a servo-powered back gate that would
+            swivel up and down depending on whether we wanted to keep a ball or
+            dump it.
+		    <br>
+		    <br>     
+		    <a name="results">    
+		    <H2>Results</H2></a>
+            In Round 1, our team went up against Team 40, &quot;Cortez the
+            Killer.&quot;&nbsp; Cortez was designed to go up the hill and grab
+            all 4 balls on its side, hoping to get a double-win for both teams
+            in the event that their opponent doesn't score.&nbsp; Unfortunately
+            for them, they grabbed more of our balls than they did theirs, and
+            our team actually ended up having the 3rd-highest score out of all
+            60 teams in the round.&nbsp; Unfortunately, our beacon failed to
+            turn on in the beginning of the round and we were given a loss via
+            disqualification.&nbsp;
+		    <br>
+		    <br> 
+		    <a name="analysis">    
+		    <H2>Final Analysis</H2></a>
+            The main problem that plagued our robot was the one described
+            earlier concerning a weak ramp.&nbsp; Essentially, we overestimated
+            the power that a servo was able to provide.<br>
+            <br>
+            Another problem that our robot had was that after we had finished
+            construction on the robot, we noticed that it seemed to run out of
+            power sometimes as it tried to turn and climb up the hills.&nbsp;
+            This is probably due to the 45:1 gear ratio that we employed.&nbsp;
+            Originally, we had thought that a 45:1 ratio would give our robot a
+            fast speed.&nbsp; However, we underestimated exactly how heavy the
+            robot would turn out to be.&nbsp; Furthermore, because we moved our
+            handyboard and batteries from the top of the robot to the side
+            compartments, the weights were no longer centered over our main gear
+            train.&nbsp; I believe we could have fixed this issue by using a
+            gear ratio of 75:1 or 90:1, trading in speed for power.
+		    <br>
+		    <br>
+		    <a name="pictures">
+		    <H2>Pictures</H2></a>
+            <div align="center">
+              <center>
+              <table border="0" width="100">
+                <tr>
+                  <td>
+                    <p align="left"><img border="0" src="DSCN0703_small.jpg" width="240" height="180"></td>
+                  <td><img border="0" src="DSCN0713_small.jpg" width="240" height="180"></td>
+                </tr>
+                  <td>
+                    <font face="VERDANA,HELVETICA" size="2" color="#000000">
+                    <p align="center">A contest ball resting comfortably on the
+                    ramp.</td>
+                  <td>
+                    <font face="VERDANA,HELVETICA" size="2" color="#000000">
+                    <p align="center">A side view of kerpal.&nbsp; The ramp is
+                    in its starting, upwards position, while the ball is held in place
+                    by the back gate.</font></td>
+                <tr>
+                  <td>
+                    <p align="left"><img border="0" src="DSCN0723_small.jpg" width="240" height="180"></td>
+                  <td><img border="0" src="DSCN0727_small.jpg" width="240" height="180"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <font face="VERDANA,HELVETICA" size="2" color="#000000">                  
+                    <p align="center">The handyboard compartment on the left
+                    side of kerpal was made to be able to accommodate all the
+                    wires and also be able to show the LCD display.</td>
+                  <td>
+                    <font face="VERDANA,HELVETICA" size="2" color="#000000">                  
+                    <p align="center">The underside of kerpal is exposed.&nbsp;
+                    The gear train employs a 45:1 gear ratio.</td>
+                </tr>
+              </table>
+              </center>
+            </div>
+            <p align="center">
+		    <br>
+		    <br>     
+		    <a name="code">    
+		    <H2>Code</H2></a>
+        <a href="http://mit.edu/dwtsai/www/6.270/persistent.lis">persistent.lis</a>
+        -- Loads the below two files consecutively<br>
+        <a href="http://mit.edu/dwtsai/www/6.270/persistent.c">persistent.c</a>
+        -- Sets up persistent variables<br>
+        <a href="http://mit.edu/dwtsai/www/6.270/robot2.c">robot2.c</a> -- The
+        meat of our code
+		    <br>
+		    <br>     
+		    <a name="team">
+		    <H2>The Team</H2></a>
+            Team 9 consists of <b>David Tsai '05</b> and <b>Min Zhang '05</b>.&nbsp;
+            <b>Andy Lin '05</b> was also originally part of the team, but
+        stopped coming to class after the 4th day of IAP.</font>
+    </td>
+  </tr>
+</table>
+
+<table border="0" width="840">
+	<td bgcolor="#FFFF00" align="center">
+		<font face="VERDANA,HELVETICA" size="2" color="#000000">
+		Copyright 2003 - David Tsai
+		</font>
+	</td>
+</table>
+
+
+</body>
+
+</html>
