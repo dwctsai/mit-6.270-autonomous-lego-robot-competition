@@ -6,9 +6,9 @@
 
 This year's (2003) competition, "Montezuma's Revenge," involves a three-tiered playing field.  Robots are placed at the designated starting positions and try to collect balls of their own color.  If they manage to bring one of their balls to rest at the center plateau, they get 1 point.  If they manage to place the ball inside the bucket on the lower plateau, they are awarded 4 points.  Each round lasts for 60 seconds and at the end of the round, the team with the highest score wins.
 
-<center>
+<p align="center">
 <img src="website/images/playing_field_small.jpg">
-</center>
+</p>
 
 ## The Name
 
